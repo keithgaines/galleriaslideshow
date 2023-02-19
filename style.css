@@ -5,6 +5,8 @@
 
 button {
   float: right;
+  border-radius: 0px;
+  background-color: white;
 }
 
 .masonry {
