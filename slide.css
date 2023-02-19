@@ -53,6 +53,7 @@
     font-weight: 700; /* Bold */
     font-size: 40px;
     line-height: 80px;
+    opacity: 30%;
 }
 
 .gotosource {
