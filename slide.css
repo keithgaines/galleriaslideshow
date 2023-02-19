@@ -17,7 +17,7 @@
 
 .titleartistbox {
     position: absolute;
-    top: 45%;
+    top: 40%;
     background-color: white;
     width: 65%;
     padding-left: 40px;
@@ -32,28 +32,31 @@
 
 .artistimage {
     position: relative;
-    top: 20px;
+    top: 6vh;
     left: 20px;
 }
 
 .textblurb {
-    padding-top: 6%;
+    padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 28px;
 }
 
 .year {
     position: absolute;
-    top: 55%;
-    right: 20px;
+    top: 57%;
+    right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
-    font-size: 30px;
-    line-height: 20px;
+    font-size: 40px;
+    line-height: 80px;
 }
 
 .gotosource {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .slideshow-progress {
@@ -130,3 +133,4 @@
     padding: 10px 20px;
     cursor: pointer;
 }
+
