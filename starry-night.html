@@ -5,32 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="slide.css">
   <title>Frontend Mentor | Galleria slideshow site</title>
+
 </head>
 <body>
-  Stop slideshow
-
-  View image
-  <!-- Modal start -->
-  Close
-  <!-- Modal end -->
-
-  Starry Night
-  Vincent Van Gogh
-
-  1889
-  Although The Starry Night was painted during the day in Van Gogh's ground-floor 
-  studio, it would be inaccurate to state that the picture was painted from memory. 
-  The view has been identified as the one from his bedroom window, facing east, a 
-  view which Van Gogh painted variations of no fewer than twenty-one times, including 
-  The Starry Night. "Through the iron-barred window," he wrote to his brother, Theo, 
-  around 23 May 1889, "I can see an enclosed square of wheat ... above which, in the 
-  morning, I watch the sun rise in all its glory."
-
-  Go to source <!-- URL: https://en.wikipedia.org/wiki/The_Starry_Night -->
-
-  Starry Night
-  Vincent Van Gogh
+  <div class="header">
+    <span style="padding-left: 20px;">galleria</span>
+    <span style="float: right; padding-right: 20px">STOP SLIDESHOW</span>
+  </div>
+  <hr>
+  <div class="heroimage">
+    <img src="assets/starry-night/hero-small.jpg" alt="starry-night">
+    <button class="view-image-btn">View Image</button>
+  </div>
+  <div class="titleartistbox">
+    <div class="title">
+      <h1>Starry Night</h1>
+    </div>
+    <div class="artist">
+      <p>Vincent Van Gogh</p>
+    </div>
+  </div>
+  <div class="artistimage">
+    <img src="assets/starry-night/artist.jpg" alt="van goh portrait">
+  </div>
+  <div class="textblurb">
+    <div class="year">
+      <h1>1889</h1>
+    </div>
+    <p>Although The Starry Night was painted during the day in Van Gogh's ground-floor 
+      studio, it would be inaccurate to state that the picture was painted from memory. 
+      The view has been identified as the one from his bedroom window, facing east, a 
+      view which Van Gogh painted variations of no fewer than twenty-one times, including 
+      The Starry Night. "Through the iron-barred window," he wrote to his brother, Theo, 
+      around 23 May 1889, "I can see an enclosed square of wheat ... above which, in the 
+      morning, I watch the sun rise in all its glory."</p>
+    
+    <div class="gotosource">
+      <p>Go to source <!-- URL: https://en.wikipedia.org/wiki/The_Starry_Night --></p>
+    </div>
+  </div>
+  <div class="slideshow-progress">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="footer">
+    <div class="titleandartist">
+      <p>Starry Night</p>
+      <p>Vincent Van Gogh</p>
+    </div>
+    <div class="slideshow-controls">
+      <button class="slideshow-control prev"><img src="prev.png" alt="previous"></button>
+      <button class="slideshow-control next"><img src="next.png" alt="next"></button>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="assets/starry-night/gallery.jpg" alt="starry night">
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+  </div> 
+  <script src="./script.js"></script> 
 </body>
 </html>
