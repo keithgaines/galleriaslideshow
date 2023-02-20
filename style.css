@@ -19,8 +19,10 @@ button {
 .masonry {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
-    padding: 20px;
+    width: 90%;
+    padding-left: 6%;
+    padding-right: 4%;
+    margin: auto;
   }
   .masonry .column {
     width: 25%;
