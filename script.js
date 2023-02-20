@@ -1,26 +1,3 @@
-const slideshowImages = document.querySelectorAll('.heroimage img');
-let currentImageIndex = 0;
-
-function showImage(index) {
-  slideshowImages[currentImageIndex].classList.remove('active');
-  currentImageIndex = index;
-  slideshowImages[currentImageIndex].classList.add('active');
-}
-
-document.querySelector('.slideshow-control.prev').addEventListener('click', () => {
-  const index = (currentImageIndex - 1 + slideshowImages.length) % slideshowImages.length;
-  showImage(index);
-});
-
-document.querySelector('.slideshow-control.next').addEventListener('click', () => {
-  const index = (currentImageIndex + 1) % slideshowImages.length;
-  showImage(index);
-});
-
-slideshowImages[currentImageIndex].classList.add('active');
-
-
-// JavaScript code
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const closeBtn = document.getElementById('close-btn');
@@ -42,3 +19,19 @@ closeBtn.addEventListener('click', () => {
   // Hide the lightbox
   lightbox.style.display = 'none';
 });
+
+
+var imagesCount = 15; // Replace with the actual number of images in the slideshow
+var progressBar = document.querySelector('.progress-bar');
+var progress = 0;
+
+function updateProgress() {
+  progress += 100 / imagesCount;
+  progressBar.style.width = progress + '%';
+}
+
+var prevButton = document.querySelector('.prev-button');
+prevButton.addEventListener('click', updateProgress);
+
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener('click', updateProgress);
