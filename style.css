@@ -1,4 +1,5 @@
 .galleria {
+  float: left;
   padding-left: 20px;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
