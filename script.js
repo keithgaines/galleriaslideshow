@@ -1,24 +1,28 @@
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
-const closeBtn = document.getElementById('close-btn');
 const viewImageBtn = document.querySelector('.view-image-btn');
 
-viewImageBtn.addEventListener('click', () => {
-  // Get the source of the image
-  const imageUrl = document.querySelector('.heroimage img').getAttribute('src');
-  console.log(`Image URL: ${imageUrl}`);
+// Add event listener to parent element
+document.addEventListener('touchstart', function(event) {
+  // Check if the target element is the view image button
+  if (event.target.closest('.view-image-btn')) {
+    // Get the source of the image
+    const imageUrl = document.querySelector('.heroimage img').getAttribute('src');
+    console.log(`Image URL: ${imageUrl}`);
 
-  // Set the source of the lightbox image
-  lightboxImage.setAttribute('src', imageUrl);
+    // Set the source of the lightbox image
+    lightboxImage.setAttribute('src', imageUrl);
   
-  // Show the lightbox
-  lightbox.style.display = 'block';
-});
+    // Show the lightbox
+    lightbox.style.display = 'block';
+  }
 
-closeBtn.addEventListener('click', () => {
-  // Hide the lightbox
-  lightbox.style.display = 'none';
-});
+  // Check if the target element is the close button
+  if (event.target.closest('#close-btn')) {
+    // Hide the lightbox
+    lightbox.style.display = 'none';
+  }
+}, { passive: true });
 
 
 var imagesCount = 15; // Replace with the actual number of images in the slideshow
