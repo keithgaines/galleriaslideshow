@@ -1,3 +1,7 @@
+.header {
+  margin-top: 20px;
+}
+
 .galleria {
   float: left;
   padding-left: 20px;
@@ -45,6 +49,7 @@ button {
     font-size: 18px;
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
+    width: 80%;
   }
   .masonry .item .artist {
     position: absolute;
