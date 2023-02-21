@@ -28,7 +28,7 @@
 
 .titleartistbox {
     position: absolute;
-    top: 35%;
+    top: 40%;
     background-color: white;
     width: 65%;
     padding-left: 40px;
@@ -65,7 +65,7 @@
 
 .year {
     position: absolute;
-    top: 60%;
+    top: 70%;
     right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
