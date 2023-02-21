@@ -5,30 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="slide.css">
   <title>Frontend Mentor | Galleria slideshow site</title>
 </head>
 <body>
-  Stop slideshow
-
-  View image
-  <!-- Modal start -->
-  Close
-  <!-- Modal end -->
-
-  Penitent Magdalene
-  Artemisia Gentileschi
-
-  1625
-  Penitent Magdalene is a painting by the Italian artist Artemisia Gentileschi. 
-  It hangs in Seville Cathedral. It has probably been in the cathedral since the 
-  late 17th century. The painting's first home was the collection of Fernando 
-  Enriquez Afan de Ribera, from 1626 to 1637. She returned to the subject later 
-  in the 1620s in Mary Magdalene as Melancholy. 
-
-  Go to source <!-- URL: https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi) -->
-
-  Penitent Magdalene
-  Artemisia Gentileschi
+  <div class="header">
+    <span class= "galleria">galleria</span>
+    <span style="float: right;"><a href="http://keithgaines.github.io/galleriaslideshow">STOP SLIDESHOW</a></span>
+  </div>
+  <hr>
+  <div class="heroimage">
+    <img src="assets/penitent-magdalene/hero-small.jpg" alt="penitent-magdalene">
+    <button class="view-image-btn">View Image</button>
+  </div>
+  <div class="titleartistbox">
+    <div class="title">
+      <h1>Penitent Magdalene</h1>
+    </div>
+    <div class="artist">
+      <p>Artemisia Gentileschi</p>
+    </div>
+  </div>
+  <div class="artistimage">
+    <img src="assets/penitent-magdalene/artist.jpg" alt="artist portrait">
+  </div>
+  <div class="textblurb">
+    <div class="year">
+      <h1>1625</h1>
+    </div>
+    <p>Penitent Magdalene is a painting by the Italian artist Artemisia Gentileschi. 
+      It hangs in Seville Cathedral. It has probably been in the cathedral since the 
+      late 17th century. The painting's first home was the collection of Fernando 
+      Enriquez Afan de Ribera, from 1626 to 1637. She returned to the subject later 
+      in the 1620s in Mary Magdalene as Melancholy.</p>
+    <div class="gotosource">
+      <a href="https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi)"><p>Go to source</p><a>
+    </div>
+  </div>
+  <div class="slideshow-progress">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="footer">
+    <div class="titleandartistfooter">
+      <div class="title">
+        <h1>Penitent Magdalene </h1>
+      </div>      
+      <div class='artist'> 
+        <p>Artemisia Gentileschi</p>
+      </div>
+    </div>
+    <div class="slideshow-controls">
+      <a href="http://keithgaines.github.io/galleriaslideshow/guernica.html"><button class="arrow left">&#8592; Prev</button></a>
+      <a href="http://keithgaines.github.io/galleriaslideshow/the-storm-on-the-sea-of-galilee.html"><button class="arrow right">Next &#8594;</button></a>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="assets\girl-with-pearl-earring\hero-small.jpg" alt="starry night">
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+  </div> 
+  <script src="./script.js"></script> 
 </body>
 </html>
