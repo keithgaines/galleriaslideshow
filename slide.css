@@ -28,7 +28,7 @@
 
 .titleartistbox {
     position: absolute;
-    top: 43%;
+    top: 35%;
     background-color: white;
     width: 65%;
     padding-left: 40px;
@@ -55,7 +55,7 @@
 }
 
 .textblurb {
-    padding-top: 30%;
+    padding-top: 33%;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Libre Baskerville', serif;
@@ -65,7 +65,7 @@
 
 .year {
     position: absolute;
-    top: 64%;
+    top: 60%;
     right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
