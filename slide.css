@@ -95,11 +95,13 @@
   
 .titleandartist {
     float: left;
+    width: 60%;
 }
 
 .slideshow-controls {
     float: right;
-    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25%;
 }
   
 /* CSS code */
@@ -156,3 +158,6 @@
     cursor: pointer;
 }
 
+.titleandartistfooter {
+    width: 50%;
+}
