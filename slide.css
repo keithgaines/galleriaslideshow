@@ -45,7 +45,7 @@
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15px;
+    /* line-height: 15px; */
 }
 
 .artistimage {
@@ -65,7 +65,7 @@
 
 .year {
     position: absolute;
-    top: 60%;
+    top: 64%;
     right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
