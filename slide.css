@@ -50,12 +50,12 @@
 
 .artistimage {
     position: relative;
-    top: 8vh;
+    top: 15vh;
     left: 20px;
 }
 
 .textblurb {
-    padding-top: 15%;
+    padding-top: 30%;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Libre Baskerville', serif;
@@ -65,7 +65,7 @@
 
 .year {
     position: absolute;
-    top: 57%;
+    top: 60%;
     right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
