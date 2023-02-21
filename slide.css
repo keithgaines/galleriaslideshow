@@ -98,10 +98,16 @@
     width: 60%;
 }
 
+
+.titleandartistfooter {
+    width: 80%;
+}
+
+
 .slideshow-controls {
     float: right;
     margin-bottom: 50px;
-    padding-top: 25%;
+    width: 40%;
 }
   
 /* CSS code */
@@ -158,6 +164,3 @@
     cursor: pointer;
 }
 
-.titleandartistfooter {
-    width: 50%;
-}
