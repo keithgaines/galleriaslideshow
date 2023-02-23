@@ -3,35 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="slide.css">
   <title>Frontend Mentor | Galleria slideshow site</title>
 </head>
 <body>
-  Stop slideshow
-
-  View image
-  <!-- Modal start -->
-  Close
-  <!-- Modal end -->
-
-  Mona Lisa
-  Leonardo da Vinci
-
-  1503
-  The Mona Lisa (/ˌmoʊnə ˈliːsə/; italian: La Gioconda [la dʒoˈkonda] or Monna 
-  Lisa [ˈmɔnna ˈliːza]) is a half-length portrait painting by Italian artist 
-  Leonardo da Vinci. Considered an archetypal masterpiece of the Italian 
-  Renaissance, it has been described as "the best known, the most visited, the 
-  most written about, the most sung about, the most parodied work of art in the 
-  world". The painting's novel qualities include the subject's enigmatic 
-  expression, the monumentality of the composition, the subtle modelling of 
-  forms, and the atmospheric illusionism.
-
-  Go to source <!-- URL: https://en.wikipedia.org/wiki/Mona_Lisa -->
-
-  Mona Lisa
-  Leonardo da Vinci
+  <div class="header">
+    <span class= "galleria">galleria</span>
+    <span style="float: right;"><a href="http://keithgaines.github.io/galleriaslideshow">STOP SLIDESHOW</a></span>
+  </div>
+  <hr>
+  <div class="heroimage">
+    <img src="assets/mona-lisa/thumbnail.jpg" alt="thumbnail image">
+    <button class="view-image-btn">View Image</button>
+  </div>
+  <div class="titleartistbox">
+    <div class="title">
+      <h1>Mona Lisa</h1>
+    </div>
+    <div class="artist">
+      <p>Leonardo da Vinci</p>
+    </div>
+  </div>
+  <div class="artistimage">
+    <img src="assets/mona-lisa/artist.jpg" alt="artist portrait">
+  </div>
+  <div class="textblurb">
+    <div class="year">
+      <h1>1503</h1>
+    </div>
+    <p>The Mona Lisa (/ˌmoʊnə ˈliːsə/; italian: La Gioconda [la dʒoˈkonda] or Monna 
+      Lisa [ˈmɔnna ˈliːza]) is a half-length portrait painting by Italian artist 
+      Leonardo da Vinci. Considered an archetypal masterpiece of the Italian 
+      Renaissance, it has been described as "the best known, the most visited, the 
+      most written about, the most sung about, the most parodied work of art in the 
+      world". The painting's novel qualities include the subject's enigmatic 
+      expression, the monumentality of the composition, the subtle modelling of 
+      forms, and the atmospheric illusionism.</p>
+    <div class="gotosource">
+      <a href="https://en.wikipedia.org/wiki/Mona_Lisa"><p>Go to source</p><a>
+    </div>
+  </div>
+  <div class="slideshow-progress">
+    <div class="progress-bar"></div>
+  </div>
+  <div class="footer">
+    <div class="titleandartistfooter">
+      <div class="title">
+        <h1>Mona Lisa</h1>
+      </div>      
+      <div class='artist'> 
+        <p>Leonardo da Vinci</p>
+      </div>
+    </div>
+    <div class="slideshow-controls">
+      <a href="http://keithgaines.github.io/galleriaslideshow/arnolfini-portrait.html"><button class="arrow left">&#8592; Prev</button></a>
+      <a href="http://keithgaines.github.io/galleriaslideshow/the-swing.html"><button class="arrow right">Next &#8594;</button></a>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="assets\mona-lisa\hero-small.jpg" alt="lightbox image">
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+  </div> 
+  <script src="./script.js"></script> 
 </body>
 </html>
