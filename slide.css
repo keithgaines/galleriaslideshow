@@ -14,8 +14,12 @@
     float: right;
 }
 
-.heroimage img {
+.heroimage {
     position: relative;
+    margin-bottom: 20%;
+}
+
+.heroimage img {
     width: 100%;
     margin: auto;
 }
@@ -26,13 +30,14 @@
     left: 20px;
 }
 
-.titleartistbox {
+.titleandartistbox {
     position: absolute;
-    top: 40%;
+    bottom: -10%;
+    left: 0;
+    width: 80%;
+    z-index: 1;
     background-color: white;
-    width: 65%;
-    padding-left: 40px;
-}
+  }
 
 .title {
     font-family: 'Libre Baskerville', serif;
@@ -48,14 +53,9 @@
     /* line-height: 15px; */
 }
 
-.artistimage {
-    position: relative;
-    top: 15vh;
-    left: 20px;
-}
 
 .textblurb {
-    padding-top: 33%;
+    padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Libre Baskerville', serif;
@@ -65,7 +65,7 @@
 
 .year {
     position: absolute;
-    top: 70%;
+    top: 85%;
     right: 15px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
@@ -97,7 +97,6 @@
     float: left;
     width: 60%;
 }
-
 
 .titleandartistfooter {
     width: 80%;
