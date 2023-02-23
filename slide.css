@@ -53,7 +53,6 @@
     /* line-height: 15px; */
 }
 
-
 .textblurb {
     padding-top: 5%;
     padding-left: 5%;
@@ -63,15 +62,23 @@
     line-height: 28px;
 }
 
+.artistimage {
+    width: 40%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.artistimage img {
+    width: 80%;
+}
+
 .year {
-    position: absolute;
-    top: 70%;
-    right: 15px;
+    float: right;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 38px;
     opacity: 30%;
+    /* margin-bottom: 20px; */
 }
 
 .gotosource {
