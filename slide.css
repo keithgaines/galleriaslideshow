@@ -29,7 +29,6 @@
     color: black;
 }
 
-
 .view-image-btn {
     position: absolute;
     top: 0px;
@@ -130,7 +129,6 @@
     width: 40%;
 }
   
-/* CSS code */
 #lightbox {
     display: none;
     position: fixed;
@@ -159,5 +157,45 @@
     cursor: pointer;
 }
 
+@media (min-width: 481px) {
 
+    .heroimage img {
+        width: 70%;
+        margin: auto;
+    }
+
+    .view-image-btn {
+        position: absolute;
+        top: 70%;
+        left: 10px;
+    }
+
+    .titleandartistbox {
+        position: absolute;
+        top: 0%;
+        left: 60%;
+        width: 80%;
+        height: 40%;
+      }
+
+      .artistimage {
+        position: absolute;
+        right: 10%;
+        top: 41%;
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .year {
+        position: relative;
+        margin-top: -20%;
+        font-size: 100px;
+        line-height: 150px;
+        color: rgb(229, 229, 229) hsl(0, 0%, 90%)
+    }
+
+    .textblurb {
+        margin-top: -30%;
+    }
+}
 
