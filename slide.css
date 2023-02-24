@@ -24,19 +24,33 @@
     margin: auto;
 }
 
+.view-image-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
 .view-image-btn {
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 0px;
+    left: 10px;
+    display: block;
+    margin: 30px auto;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .titleandartistbox {
     position: absolute;
     bottom: -15%;
-    left: 20px;
+    left: 0;
     width: 80%;
     z-index: 1;
     background-color: white;
+    padding-left: 25px;
   }
 
 .title {
@@ -54,7 +68,6 @@
 }
 
 .textblurb {
-    padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Libre Baskerville', serif;
@@ -63,23 +76,23 @@
 }
 
 .artistimage {
-    width: 40%;
-    float: left;
+    display: inline-block;    
     margin-bottom: 30px;
     padding-left: 20px;
 }
 
 .artistimage img {
-    width: 80%;
+    width: 100%;
 }
 
 .year {
-    float: right;
+    display: inline-block;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700; /* Bold */
     font-size: 38px;
     opacity: 30%;
     /* margin-bottom: 20px; */
+    width: 50%;
 }
 
 .gotosource {
@@ -146,28 +159,5 @@
     cursor: pointer;
 }
 
-.view-image-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.view-image-btn:hover {
-    background-color: white;
-    color: black;
-}
-
-
-.view-image-btn {
-    display: block;
-    margin: 30px auto;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
