@@ -67,4 +67,4 @@ Overall, I am excited to continue developing my skills and expertise in web deve
 
 ## Acknowledgments
 
-Shoutout to Google, and StackOverflow. This was definitely one of the more difficult projects I've done in my career up until now, but Google and StackOverflow were there with documentation to help me figure it out. 
+I'd like to give a shout-out to Google and Stack Overflow for their invaluable contribution to this project. I relied heavily on both resources throughout the development process, and their wealth of knowledge and expertise helped me overcome numerous challenges. Without their support, this project wouldn't have been possible. So, thank you Google and Stack Overflow, and the amazing community behind them, for being an essential part of the development process.
